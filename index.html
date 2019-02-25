@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Album Collection:</title>
+    <script src="js/app.js"></script>
+      <link rel="stylesheet" type="text/css" media="screen" href="css/visuals.css" />
+  </head>
+  <body>
+    <form id="new-album-form">
+    <div id="form-wrapper">
+
+      <div class="form-item">
+        <label for="title" class="primary">Album Title</label>
+        <input type="text" id="title" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="artist" class="primary">Artist</label>
+        <input type="text" id="artist" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="year" class="primary">Date of Release</label>
+        <input type="date" id="year" required/>
+      </div>
+
+      <div class="form-item">
+          <label for="genre" class="primary">Genre</label>
+          <select id="genre">
+            <option value="" disabled selected></option>
+            <option value="Blues">Blues</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Folk">Folk</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+            <option value="R&B and Soul">R&B and Soul</option>
+            <option value="Rock">Rock</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+    </div>
+    <input type="submit" value="Save"/>
+    </form>
+    <h1>Album Collection:</h1>
+    <div id="album-collection"></div>
+  </body>
+</html>
